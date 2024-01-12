@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Grant-Mastery",
-
+    'version': '0.1',
     'summary': "Customizations for the Grant-Mastery Addon",
 
     'description': """
@@ -15,7 +15,7 @@ Grant-Mastery All Customizations
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    
     'application': True,
 
     # any module necessary for this one to work correctly
@@ -26,5 +26,6 @@ Grant-Mastery All Customizations
         # 'security/ir.model.access.csv',
         'views/views.xml',
     ],
+
 }
 
