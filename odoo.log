@@ -2861,3 +2861,242 @@
 2024-01-12 17:20:31,509 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 17:20:31] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.014 0.460
 2024-01-12 17:20:31,856 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 17:20:31] "POST /mail/inbox/messages HTTP/1.1" 200 - 4 0.002 0.004
 2024-01-12 17:20:33,105 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 17:20:33] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2024-01-12 18:03:41,025 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:41] "POST /web/action/load HTTP/1.1" 200 - 9 0.008 0.093
+2024-01-12 18:03:41,211 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:41] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 17 0.007 0.015
+2024-01-12 18:03:41,348 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.003
+2024-01-12 18:03:41,643 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.014 0.097
+2024-01-12 18:03:41,652 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:41] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.006 0.112
+2024-01-12 18:03:42,298 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:42] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.005
+2024-01-12 18:03:42,612 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:42] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 4 0.002 0.004
+2024-01-12 18:03:42,877 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:42] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 1 0.001 0.003
+2024-01-12 18:03:44,118 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:44] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 3 0.001 0.005
+2024-01-12 18:03:44,435 15952 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user tyler@payneempowerment.com #2 via 127.0.0.1 
+2024-01-12 18:03:44,896 15952 INFO test odoo.modules.registry: Caches invalidated, signaling through the database: ['templates'] 
+2024-01-12 18:03:44,897 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:44] "POST /web/dataset/call_button HTTP/1.1" 200 - 1284 0.219 0.250
+2024-01-12 18:03:47,805 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.006 0.013
+2024-01-12 18:03:48,140 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.002 0.025
+2024-01-12 18:03:49,991 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:49] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.018 0.016
+2024-01-12 18:03:50,317 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:50] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.006
+2024-01-12 18:03:52,930 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:52] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.009 0.009
+2024-01-12 18:03:53,263 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:03:53] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.024
+2024-01-12 18:20:43,589 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:20:43] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2024-01-12 18:37:19,933 3700 INFO ? odoo: Odoo version 17.0-20240112 
+2024-01-12 18:37:19,933 3700 INFO ? odoo: Using configuration file at C:\code\odoo17\server\odoo.conf 
+2024-01-12 18:37:19,933 3700 INFO ? odoo: addons paths: ['C:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\sessions\\addons\\17.0', 'c:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\server\\custom'] 
+2024-01-12 18:37:19,933 3700 INFO ? odoo: database: openpg@localhost:5432 
+2024-01-12 18:37:20,501 3700 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\code\Odoo17\thirdparty\wkhtmltopdf.exe 
+2024-01-12 18:37:20,663 3700 INFO ? odoo.service.server: HTTP service (werkzeug) running on TylerLaptop:8069 
+2024-01-12 18:37:20,670 3700 INFO ? odoo.modules.loading: init db 
+2024-01-12 18:37:20,948 3700 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'grantmasteryproposals', defaulting to LGPL-3 
+2024-01-12 18:37:20,972 3700 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'grantmastery', defaulting to LGPL-3 
+2024-01-12 18:37:21,427 3700 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'grantmasterycontacts', defaulting to LGPL-3 
+2024-01-12 18:37:21,548 3700 INFO Test odoo.modules.loading: loading 1 modules... 
+2024-01-12 18:37:21,548 3700 INFO Test odoo.modules.loading: Loading module base (1/1) 
+2024-01-12 18:37:21,566 3700 INFO Test odoo.modules.registry: module base: creating or updating database tables 
+2024-01-12 18:37:21,877 3700 INFO Test odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2024-01-12 18:37:21,878 3700 INFO Test odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2024-01-12 18:37:21,878 3700 INFO Test odoo.models: Prepare computation of ir.module.module.views_by_module 
+2024-01-12 18:37:21,996 3700 INFO Test odoo.models: Prepare computation of res.partner.user_id 
+2024-01-12 18:37:21,997 3700 INFO Test odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2024-01-12 18:37:21,997 3700 INFO Test odoo.models: Prepare computation of res.partner.complete_name 
+2024-01-12 18:37:21,997 3700 INFO Test odoo.models: Prepare computation of res.partner.company_registry 
+2024-01-12 18:37:21,997 3700 INFO Test odoo.models: Prepare computation of res.partner.commercial_company_name 
+2024-01-12 18:37:21,997 3700 INFO Test odoo.models: Prepare computation of res.partner.partner_share 
+2024-01-12 18:37:22,040 3700 INFO Test odoo.models: Prepare computation of res.currency.decimal_places 
+2024-01-12 18:37:22,065 3700 INFO Test odoo.models: Prepare computation of res.company.uses_default_logo 
+2024-01-12 18:37:22,065 3700 INFO Test odoo.models: Prepare computation of res.company.logo_web 
+2024-01-12 18:37:22,067 3700 INFO Test odoo.models: Computing parent_path for table res_company... 
+2024-01-12 18:37:22,094 3700 INFO Test odoo.models: Prepare computation of res.users.signature 
+2024-01-12 18:37:22,095 3700 INFO Test odoo.models: Prepare computation of res.users.share 
+2024-01-12 18:37:23,214 3700 INFO Test odoo.modules.loading: loading base/data/res_bank.xml 
+2024-01-12 18:37:23,219 3700 INFO Test odoo.modules.loading: loading base/data/res.lang.csv 
+2024-01-12 18:37:23,251 3700 INFO Test odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-01-12 18:37:23,272 3700 INFO Test odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-01-12 18:37:23,314 3700 INFO Test odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-01-12 18:37:23,652 3700 INFO Test odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-01-12 18:37:23,658 3700 INFO Test odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-01-12 18:37:24,297 3700 INFO Test odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-01-12 18:37:24,303 3700 INFO Test odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-01-12 18:37:24,578 3700 INFO Test odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-01-12 18:37:24,585 3700 INFO Test odoo.modules.loading: loading base/security/base_groups.xml 
+2024-01-12 18:37:24,728 3700 INFO Test odoo.modules.loading: loading base/security/base_security.xml 
+2024-01-12 18:37:24,805 3700 INFO Test odoo.modules.loading: loading base/views/base_menus.xml 
+2024-01-12 18:37:24,855 3700 INFO Test odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-01-12 18:37:24,866 3700 INFO Test odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-01-12 18:37:24,873 3700 INFO Test odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-01-12 18:37:25,215 3700 INFO Test odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-01-12 18:37:25,288 3700 INFO Test odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2024-01-12 18:37:25,296 3700 INFO Test odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2024-01-12 18:37:25,305 3700 INFO Test odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2024-01-12 18:37:25,322 3700 INFO Test odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2024-01-12 18:37:25,332 3700 INFO Test odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2024-01-12 18:37:25,342 3700 INFO Test odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2024-01-12 18:37:25,355 3700 INFO Test odoo.modules.loading: loading base/views/ir_model_views.xml 
+2024-01-12 18:37:25,431 3700 INFO Test odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2024-01-12 18:37:25,443 3700 INFO Test odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2024-01-12 18:37:25,456 3700 INFO Test odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2024-01-12 18:37:25,468 3700 INFO Test odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2024-01-12 18:37:25,479 3700 INFO Test odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2024-01-12 18:37:25,506 3700 INFO Test odoo.modules.loading: loading base/views/ir_default_views.xml 
+2024-01-12 18:37:25,517 3700 INFO Test odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2024-01-12 18:37:25,524 3700 INFO Test odoo.modules.loading: loading base/report/ir_model_report.xml 
+2024-01-12 18:37:25,527 3700 INFO Test odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2024-01-12 18:37:25,531 3700 INFO Test odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2024-01-12 18:37:25,541 3700 INFO Test odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2024-01-12 18:37:25,547 3700 INFO Test odoo.modules.loading: loading base/views/ir_module_views.xml 
+2024-01-12 18:37:25,574 3700 INFO Test odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2024-01-12 18:37:25,611 3700 INFO Test odoo.modules.loading: loading base/data/ir_module_module.xml 
+2024-01-12 18:37:25,646 3700 INFO Test odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2024-01-12 18:37:25,649 3700 INFO Test odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2024-01-12 18:37:25,652 3700 INFO Test odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2024-01-12 18:37:25,658 3700 INFO Test odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2024-01-12 18:37:25,664 3700 INFO Test odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2024-01-12 18:37:25,671 3700 INFO Test odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2024-01-12 18:37:25,681 3700 INFO Test odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2024-01-12 18:37:25,685 3700 INFO Test odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2024-01-12 18:37:25,691 3700 INFO Test odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2024-01-12 18:37:25,700 3700 INFO Test odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2024-01-12 18:37:25,708 3700 INFO Test odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2024-01-12 18:37:25,719 3700 INFO Test odoo.modules.loading: loading base/views/res_company_views.xml 
+2024-01-12 18:37:25,729 3700 INFO Test odoo.modules.loading: loading base/views/res_lang_views.xml 
+2024-01-12 18:37:25,741 3700 INFO Test odoo.modules.loading: loading base/views/res_partner_views.xml 
+2024-01-12 18:37:25,803 3700 INFO Test odoo.modules.loading: loading base/views/res_bank_views.xml 
+2024-01-12 18:37:25,821 3700 INFO Test odoo.modules.loading: loading base/views/res_country_views.xml 
+2024-01-12 18:37:25,843 3700 INFO Test odoo.modules.loading: loading base/views/res_currency_views.xml 
+2024-01-12 18:37:25,861 3700 INFO Test odoo.modules.loading: loading base/views/res_users_views.xml 
+2024-01-12 18:37:25,920 3700 INFO Test odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2024-01-12 18:37:25,926 3700 INFO Test odoo.modules.loading: loading base/views/ir_property_views.xml 
+2024-01-12 18:37:25,938 3700 INFO Test odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2024-01-12 18:37:25,942 3700 INFO Test odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2024-01-12 18:37:25,956 3700 INFO Test odoo.modules.loading: loading base/security/ir.model.access.csv 
+2024-01-12 18:37:26,021 3700 INFO Test odoo.modules.loading: Module base: loading demo 
+2024-01-12 18:37:26,021 3700 INFO Test odoo.modules.loading: loading base/data/res_users_demo.xml 
+2024-01-12 18:37:27,033 3700 INFO Test odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2024-01-12 18:37:27,037 3700 INFO Test odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2024-01-12 18:37:27,040 3700 INFO Test odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2024-01-12 18:37:27,192 3700 INFO Test odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2024-01-12 18:37:27,195 3700 INFO Test odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2024-01-12 18:37:27,317 3700 INFO Test odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2024-01-12 18:37:27,632 3700 INFO Test odoo.modules.loading: Module base loaded in 6.08s, 9029 queries (+9029 other) 
+2024-01-12 18:37:27,632 3700 INFO Test odoo.modules.loading: 1 modules loaded in 6.08s, 9029 queries (+9029 extra) 
+2024-01-12 18:37:27,641 3700 INFO Test odoo.modules.loading: updating modules list 
+2024-01-12 18:37:27,642 3700 INFO Test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-01-12 18:37:27,975 3700 INFO Test odoo.modules.loading: loading 11 modules... 
+2024-01-12 18:37:27,975 3700 INFO Test odoo.modules.loading: Loading module web (2/11) 
+2024-01-12 18:37:27,989 3700 INFO Test odoo.modules.registry: module web: creating or updating database tables 
+2024-01-12 18:37:28,278 3700 INFO Test odoo.modules.loading: loading web/security/ir.model.access.csv 
+2024-01-12 18:37:28,285 3700 INFO Test odoo.modules.loading: loading web/views/webclient_templates.xml 
+2024-01-12 18:37:28,310 3700 INFO Test odoo.modules.loading: loading web/views/report_templates.xml 
+2024-01-12 18:37:28,353 3700 INFO Test odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2024-01-12 18:37:28,360 3700 INFO Test odoo.modules.loading: loading web/views/partner_view.xml 
+2024-01-12 18:37:28,363 3700 INFO Test odoo.modules.loading: loading web/views/speedscope_template.xml 
+2024-01-12 18:37:28,367 3700 INFO Test odoo.modules.loading: loading web/views/neutralize_views.xml 
+2024-01-12 18:37:28,372 3700 INFO Test odoo.modules.loading: loading web/data/ir_attachment.xml 
+2024-01-12 18:37:28,375 3700 INFO Test odoo.modules.loading: loading web/data/report_layout.xml 
+2024-01-12 18:37:28,403 3700 INFO Test odoo.modules.loading: Module web loaded in 0.43s, 941 queries (+941 other) 
+2024-01-12 18:37:28,403 3700 INFO Test odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-01-12 18:37:28,419 3700 INFO Test odoo.modules.registry: module auth_totp: creating or updating database tables 
+2024-01-12 18:37:28,457 3700 INFO Test odoo.modules.loading: loading auth_totp/security/security.xml 
+2024-01-12 18:37:28,469 3700 INFO Test odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2024-01-12 18:37:28,475 3700 INFO Test odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2024-01-12 18:37:28,480 3700 INFO Test odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2024-01-12 18:37:28,494 3700 INFO Test odoo.modules.loading: loading auth_totp/views/templates.xml 
+2024-01-12 18:37:28,498 3700 INFO Test odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2024-01-12 18:37:28,510 3700 INFO Test odoo.modules.loading: Module auth_totp loaded in 0.11s, 173 queries (+173 other) 
+2024-01-12 18:37:28,510 3700 INFO Test odoo.modules.loading: Loading module base_import (4/11) 
+2024-01-12 18:37:28,524 3700 INFO Test odoo.modules.registry: module base_import: creating or updating database tables 
+2024-01-12 18:37:28,833 3700 INFO Test odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2024-01-12 18:37:28,845 3700 INFO Test odoo.modules.loading: Module base_import loaded in 0.34s, 753 queries (+753 other) 
+2024-01-12 18:37:28,845 3700 INFO Test odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-01-12 18:37:28,857 3700 INFO Test odoo.modules.registry: module base_import_module: creating or updating database tables 
+2024-01-12 18:37:28,898 3700 INFO Test odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2024-01-12 18:37:28,903 3700 INFO Test odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2024-01-12 18:37:28,934 3700 INFO Test odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2024-01-12 18:37:28,958 3700 INFO Test odoo.modules.loading: Module base_import_module loaded in 0.11s, 142 queries (+142 other) 
+2024-01-12 18:37:28,958 3700 INFO Test odoo.modules.loading: Loading module base_setup (6/11) 
+2024-01-12 18:37:28,969 3700 INFO Test odoo.modules.registry: module base_setup: creating or updating database tables 
+2024-01-12 18:37:29,004 3700 INFO Test odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2024-01-12 18:37:29,008 3700 INFO Test odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2024-01-12 18:37:29,023 3700 INFO Test odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2024-01-12 18:37:29,033 3700 INFO Test odoo.modules.loading: Module base_setup loaded in 0.07s, 137 queries (+137 other) 
+2024-01-12 18:37:29,034 3700 INFO Test odoo.modules.loading: Loading module bus (7/11) 
+2024-01-12 18:37:29,050 3700 INFO Test odoo.modules.registry: module bus: creating or updating database tables 
+2024-01-12 18:37:29,096 3700 INFO Test odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2024-01-12 18:37:29,108 3700 INFO Test odoo.modules.loading: Module bus loaded in 0.07s, 107 queries (+107 other) 
+2024-01-12 18:37:29,108 3700 INFO Test odoo.modules.loading: Loading module web_tour (8/11) 
+2024-01-12 18:37:29,118 3700 INFO Test odoo.modules.registry: module web_tour: creating or updating database tables 
+2024-01-12 18:37:29,137 3700 INFO Test odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2024-01-12 18:37:29,143 3700 INFO Test odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2024-01-12 18:37:29,148 3700 INFO Test odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2024-01-12 18:37:29,165 3700 INFO Test odoo.modules.loading: Module web_tour loaded in 0.06s, 103 queries (+103 other) 
+2024-01-12 18:37:29,166 3700 INFO Test odoo.modules.loading: Loading module iap (9/11) 
+2024-01-12 18:37:29,177 3700 INFO Test odoo.modules.registry: module iap: creating or updating database tables 
+2024-01-12 18:37:29,219 3700 INFO Test odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2024-01-12 18:37:29,225 3700 INFO Test odoo.modules.loading: loading iap/security/ir_rule.xml 
+2024-01-12 18:37:29,228 3700 INFO Test odoo.modules.loading: loading iap/views/iap_views.xml 
+2024-01-12 18:37:29,240 3700 INFO Test odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2024-01-12 18:37:29,253 3700 INFO Test odoo.modules.loading: Module iap loaded in 0.09s, 150 queries (+150 other) 
+2024-01-12 18:37:29,254 3700 INFO Test odoo.modules.loading: Loading module web_editor (10/11) 
+2024-01-12 18:37:29,280 3700 INFO Test odoo.modules.registry: module web_editor: creating or updating database tables 
+2024-01-12 18:37:29,606 3700 INFO Test odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2024-01-12 18:37:29,612 3700 INFO Test odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2024-01-12 18:37:29,615 3700 INFO Test odoo.modules.loading: loading web_editor/views/editor.xml 
+2024-01-12 18:37:29,623 3700 INFO Test odoo.modules.loading: loading web_editor/views/snippets.xml 
+2024-01-12 18:37:29,649 3700 INFO Test odoo.modules.loading: Module web_editor loaded in 0.40s, 859 queries (+859 other) 
+2024-01-12 18:37:29,649 3700 INFO Test odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-01-12 18:37:29,661 3700 INFO Test odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2024-01-12 18:37:29,687 3700 INFO Test odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2024-01-12 18:37:29,702 3700 INFO Test odoo.modules.loading: Module web_unsplash loaded in 0.05s, 93 queries (+93 other) 
+2024-01-12 18:37:29,702 3700 INFO Test odoo.modules.loading: 11 modules loaded in 1.73s, 3458 queries (+3458 extra) 
+2024-01-12 18:37:29,848 3700 INFO Test odoo.modules.loading: Modules loaded. 
+2024-01-12 18:37:29,850 3700 INFO Test odoo.modules.registry: Registry loaded in 9.190s 
+2024-01-12 18:37:40,111 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:40] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 1 0.000 0.004
+2024-01-12 18:37:41,357 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:41] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 3 0.002 0.002
+2024-01-12 18:37:41,674 15952 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user tyler@payneempowerment.com #2 via 127.0.0.1 
+2024-01-12 18:37:42,102 15952 INFO test odoo.modules.registry: Caches invalidated, signaling through the database: ['templates'] 
+2024-01-12 18:37:42,296 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:42] "POST /web/dataset/call_button HTTP/1.1" 200 - 1284 0.218 0.408
+2024-01-12 18:37:50,929 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.023 0.011
+2024-01-12 18:37:51,245 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 2 0.003 0.003
+2024-01-12 18:37:52,731 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:52] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.008 0.010
+2024-01-12 18:37:53,072 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:53] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.021
+2024-01-12 18:37:54,758 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.021 0.010
+2024-01-12 18:37:55,079 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.004
+2024-01-12 18:37:56,419 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.007 0.011
+2024-01-12 18:37:56,752 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.023
+2024-01-12 18:37:58,258 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:58] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-01-12 18:37:59,719 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:37:59] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 3 0.001 0.004
+2024-01-12 18:37:59,985 15952 INFO test odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user tyler@payneempowerment.com #2 via 127.0.0.1 
+2024-01-12 18:38:00,433 15952 INFO test odoo.modules.registry: Caches invalidated, signaling through the database: ['templates'] 
+2024-01-12 18:38:00,434 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:00] "POST /web/dataset/call_button HTTP/1.1" 200 - 1284 0.202 0.250
+2024-01-12 18:38:02,952 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:02] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.019 0.014
+2024-01-12 18:38:03,275 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:03] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 2 0.002 0.004
+2024-01-12 18:38:04,063 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:04] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.006 0.010
+2024-01-12 18:38:04,401 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:04] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.002 0.023
+2024-01-12 18:38:05,918 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:05] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.026 0.006
+2024-01-12 18:38:06,238 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:06] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.005
+2024-01-12 18:38:07,721 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:07] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.012 0.006
+2024-01-12 18:38:08,065 15952 INFO test werkzeug: 127.0.0.1 - - [12/Jan/2024 18:38:08] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.021
+2024-01-12 18:38:17,308 9984 INFO ? odoo: Odoo version 17.0-20240112 
+2024-01-12 18:38:17,308 9984 INFO ? odoo: Using configuration file at C:\code\odoo17\server\odoo.conf 
+2024-01-12 18:38:17,308 9984 INFO ? odoo: addons paths: ['C:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\sessions\\addons\\17.0', 'c:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\server\\custom'] 
+2024-01-12 18:38:17,308 9984 INFO ? odoo: database: openpg@localhost:5432 
+2024-01-12 18:38:17,654 9984 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\code\Odoo17\thirdparty\wkhtmltopdf.exe 
+2024-01-12 18:38:17,791 9984 INFO ? odoo.service.server: HTTP service (werkzeug) running on TylerLaptop:8069 
+2024-01-12 18:38:17,872 9984 INFO Test odoo.modules.loading: loading 1 modules... 
+2024-01-12 18:38:17,876 9984 INFO Test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-01-12 18:38:17,881 9984 INFO Test odoo.modules.loading: loading 11 modules... 
+2024-01-12 18:38:17,926 9984 INFO Test odoo.modules.loading: 11 modules loaded in 0.05s, 0 queries (+0 extra) 
+2024-01-12 18:38:17,943 9984 INFO Test odoo.modules.loading: Modules loaded. 
+2024-01-12 18:38:17,945 9984 INFO Test odoo.modules.registry: Registry loaded in 0.157s 
+2024-01-12 18:38:20,137 13336 INFO ? odoo: Odoo version 17.0-20240112 
+2024-01-12 18:38:20,137 13336 INFO ? odoo: Using configuration file at C:\code\odoo17\server\odoo.conf 
+2024-01-12 18:38:20,137 13336 INFO ? odoo: addons paths: ['C:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\sessions\\addons\\17.0', 'c:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\server\\custom'] 
+2024-01-12 18:38:20,137 13336 INFO ? odoo: database: openpg@localhost:5432 
+2024-01-12 18:38:20,444 13336 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\code\Odoo17\thirdparty\wkhtmltopdf.exe 
+2024-01-12 18:38:20,560 13336 INFO ? odoo.service.server: HTTP service (werkzeug) running on TylerLaptop:8069 
+2024-01-12 18:38:20,631 13336 INFO Test odoo.modules.loading: loading 1 modules... 
+2024-01-12 18:38:20,635 13336 INFO Test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-01-12 18:38:20,639 13336 INFO Test odoo.modules.loading: loading 11 modules... 
+2024-01-12 18:38:20,680 13336 INFO Test odoo.modules.loading: 11 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-01-12 18:38:20,695 13336 INFO Test odoo.modules.loading: Modules loaded. 
+2024-01-12 18:38:20,696 13336 INFO Test odoo.modules.registry: Registry loaded in 0.139s 
