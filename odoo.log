@@ -3140,3 +3140,27 @@
 2024-01-12 18:40:49,091 19180 INFO Test odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
 2024-01-12 18:40:49,094 19180 INFO Test odoo.addons.base.models.ir_cron: Starting job `Base: Portal Users Deletion`. 
 2024-01-12 18:40:49,096 19180 INFO Test odoo.addons.base.models.ir_cron: Job `Base: Portal Users Deletion` done. 
+2024-01-12 18:41:39,346 9680 INFO ? odoo: Odoo version 17.0-20240112 
+2024-01-12 18:41:39,347 9680 INFO ? odoo: Using configuration file at C:\code\odoo17\server\odoo.conf 
+2024-01-12 18:41:39,347 9680 INFO ? odoo: addons paths: ['C:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\sessions\\addons\\17.0', 'c:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\server\\custom'] 
+2024-01-12 18:41:39,347 9680 INFO ? odoo: database: openpg@localhost:5432 
+2024-01-12 18:41:39,717 9680 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\code\Odoo17\thirdparty\wkhtmltopdf.exe 
+2024-01-12 18:41:39,861 9680 INFO ? odoo.service.server: HTTP service (werkzeug) running on TylerLaptop:8069 
+2024-01-12 18:41:39,934 9680 INFO Test odoo.modules.loading: loading 1 modules... 
+2024-01-12 18:41:39,939 9680 INFO Test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-01-12 18:41:39,944 9680 INFO Test odoo.modules.loading: loading 11 modules... 
+2024-01-12 18:41:39,986 9680 INFO Test odoo.modules.loading: 11 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-01-12 18:41:40,000 9680 INFO Test odoo.modules.loading: Modules loaded. 
+2024-01-12 18:41:40,001 9680 INFO Test odoo.modules.registry: Registry loaded in 0.146s 
+2024-01-12 18:42:02,833 19092 INFO ? odoo: Odoo version 17.0-20240112 
+2024-01-12 18:42:02,833 19092 INFO ? odoo: Using configuration file at C:\code\odoo17\server\odoo.conf 
+2024-01-12 18:42:02,833 19092 INFO ? odoo: addons paths: ['C:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\sessions\\addons\\17.0', 'c:\\code\\odoo17\\server\\odoo\\addons', 'c:\\code\\odoo17\\server\\custom'] 
+2024-01-12 18:42:02,833 19092 INFO ? odoo: database: openpg@localhost:5432 
+2024-01-12 18:42:03,189 19092 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\code\Odoo17\thirdparty\wkhtmltopdf.exe 
+2024-01-12 18:42:03,340 19092 INFO ? odoo.service.server: HTTP service (werkzeug) running on TylerLaptop:8069 
+2024-01-12 18:42:03,419 19092 INFO Test odoo.modules.loading: loading 1 modules... 
+2024-01-12 18:42:03,423 19092 INFO Test odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-01-12 18:42:03,429 19092 INFO Test odoo.modules.loading: loading 11 modules... 
+2024-01-12 18:42:03,474 19092 INFO Test odoo.modules.loading: 11 modules loaded in 0.05s, 0 queries (+0 extra) 
+2024-01-12 18:42:03,490 19092 INFO Test odoo.modules.loading: Modules loaded. 
+2024-01-12 18:42:03,492 19092 INFO Test odoo.modules.registry: Registry loaded in 0.155s 
