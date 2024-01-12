@@ -1,0 +1,33 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_crm_lead_tree_opportunity" model="ir.ui.view">
+        <field name="name">crm.lead.tree.opportunity</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='contact_name']" position="after">
+                <xpath expr="//field[@name='stage_id']" position="move"/>
+                <field name="gm_rfprfq_due_date" optional="show"/>
+                <xpath expr="//field[@name='user_id']" position="move"/>
+            </xpath>
+            <xpath expr="//field[@name='email_from']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='phone']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='expected_revenue']" position="after">
+                <field name="gm_administration_percentage" optional="show"/>
+                <field name="gm_rfprfq_filename" optional="show" string="RFP/RFQ"/>
+                <field name="gm_proposal_filename" optional="show" string="Proposal"/>
+                <field name="gm_notice_of_award" optional="show"/>
+            </xpath>
+            <xpath expr="//field[@name='recurring_revenue_monthly']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="string">
+                    Procurement Lead</attribute>
+            </xpath></field>
+    </record>
+</odoo>

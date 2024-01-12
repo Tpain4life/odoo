@@ -1,0 +1,7 @@
+<!-- FILEPATH:odoo17/server/custom/grantmastery/views/views.xml -->
+
+<odoo>
+    <data>
+        <!-- Your view definitions go here -->
+    </data>
+</odoo>

@@ -1,0 +1,227 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Odoo XML extension for modifying the res.partner model's form view -->
+<odoo>
+    <!-- Defining a new view that inherits from an existing view -->
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <!-- Unique name for the inherited view -->
+        <field name="name">res.partner.form.inherit</field>
+        <!-- The model to which this view applies -->
+        <field name="model">res.partner</field>
+        <!-- Reference to the parent view that is being extended -->
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+      
+            <xpath expr="//field[@name='parent_id']" position="attributes">
+                <attribute name="placeholder">
+                    Organization Name...</attribute>
+            </xpath>
+            <!-- Add organization_type field after category_id field -->
+            <xpath expr="//span[@name='address_name']" position="before">
+                <field invisible="gm_organization_type not in ['city', 'town', 'village', 'cdp', 'county']" name="gm_current_client"/>
+                <field invisible="is_company == False" name="gm_organization_type"/>
+                <field invisible="gm_organization_type not in ['city', 'town', 'village', 'cdp']" name="gm_county" readonly="1"/>
+                <field invisible="gm_organization_type not in ['city', 'town', 'village', 'cdp', 'county']" name="gm_cog" readonly="1"/>
+                <field invisible="gm_organization_type not in ['city', 'town', 'village', 'cdp', 'county']" name="gm_community_type" readonly="1"/>
+            </xpath>
+            <!-- Add a phone field fopr the texas directory-->
+            <xpath expr="//div[@class='o_row o_row_readonly']" position="after">
+                <field name="gm_tx_directory_phone" string="TX Directory Phone" widget="phone"/>
+            </xpath>
+            <xpath expr="//div[@class='o_row o_row_readonly'][field[@name='email']]" position="after">
+                <field name="gm_tx_directory_email" string="TX Directory Email" widget="email"/>
+            </xpath>
+            <xpath expr="//form/sheet/group[group/field[@name='mobile']]" position="inside">
+                <field name="gm_tx_directory_phone" string="Texas Directory Phone" widget="phone"/>
+            </xpath>
+            <xpath expr="//form/sheet/group[group/field[@name='email']]" position="inside">
+                <field name="gm_tx_directory_email" string="Texas Directory Email" widget="email"/>
+            </xpath>
+            <!-- Make Sales and purchase page invisible -->
+            <xpath expr="//page[@name='sales_purchases']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <!-- Make the country field invisible -->
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <!-- Adding a new page titled 'Community Information' at the end of the form view -->
+            <xpath expr="//page[last()]" position="after">
+                <page invisible="gm_community_type not in ['city', 'town', 'village', 'county', 'cdp']" string="Community Information">
+                    <group name="community_information">
+                        <group name="community_information_left" string="Contact, Schedule &amp; Tax">
+                            <!-- Custom fields specific to the 'Community Information' module functionality -->
+                            <field name="project_manager_ids"/>
+                            <field invisible="gm_community_type not in ['city', 'town', 'village', 'cdp']" name="gm_council_schedule"/>
+                            <field invisible="gm_community_type not in ['county']" name="gm_court_schedule"/>
+                            <field name="gm_sams_expiration" string="SAMs Expiration"/>
+                            <field filename="gm_sam_registration_filename" name="gm_sam_registration" string="SAM Registration"/>
+                            <field invisible="1" name="gm_sam_registration_filename"/>
+                            <field name="gm_tax_id_prefix"/>
+                            <field name="gm_state_tin"/>
+                            <field name="gm_uei"/>
+                            <field name="gm_duns"/>
+                            <field name="gm_fips"/>
+                            <field name="gm_fy_end"/>
+                        </group>
+                        <group name="community_information_right" string="LMI &amp; FEMA/Census">
+                            <field name="gm_census_geoid" readonly="1"/>
+                            <field name="gm_fema_cid" readonly="1"/>
+                            <field name="gm_nfip_community" readonly="1"/>
+                            <field name="gm_lmi_2021" readonly="1" widget="percentage"/>
+                            <field name="gm_glo_mit_lmi" readonly="1" widget="percentage"/>
+                            <field name="gm_lmi_2023" readonly="1" widget="percentage"/>
+                            <field name="gm_crs_class" readonly="1"/>
+                            <field name="gm_amhi_22" readonly="1"/>
+                            <field name="gm_amhi_percent_22" readonly="1"/>
+                            <field name="gm_overlap_cejst_underserved_census_tracts" readonly="1" widget="percentage"/>
+                            <field name="gm_nri_risk_score" readonly="1"/>
+                            <field name="gm_nri_risk_rating" readonly="1"/>
+                            <field name="gm_overlap_3xsvi" readonly="1" widget="percentage"/>
+                            <field name="gm_repetitive_loss_structures" readonly="1"/>
+                            <field name="gm_severe_repetitive_loss_structures" readonly="1"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+            <!-- Make the 'vat' field invisible -->
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <!-- Adding a new field 'texas_directory_contact' after the 'vat' field -->
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="gm_po_box"/>
+                <field name="gm_texas_directory_contact" readonly="1"/>
+                <field name="gm_texas_directory_update" readonly="1"/>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
+                <page invisible="gm_community_type not in ['city', 'town', 'village', 'county', 'cdp']" name="community_plans_page" string="Plans, Zoning, &amp; Building Codes">
+                    <group name="community_plans_page">
+                        <group name="community_plans_page_left" string="Community Plans">
+                            <field filename="gm_comprehensive_plan_filename" name="gm_comprehensive_plan" string="Comprehensive Plan"/>
+                            <field name="gm_comprehensive_plan_adoption_date"/>
+                            <field filename="gm_hmp_plan_filename" name="gm_hmp_plan" string="Hazard Mitigation Plan"/>
+                            <field name="gm_hmp_adoption_date"/>
+                            <field name="gm_hmp_exp_date"/>
+                            <field filename="gm_land_use_plan_filename" name="gm_land_use_plan" string="Land Use Plan"/>
+                            <field filename="gm_land_use_map_filename" name="gm_land_use_map" string="Land Use Map"/>
+                            <field name="gm_land_use_plan_adoption_date"/>
+                            <field filename="gm_cwpp_plan_filename" name="gm_cwpp_plan" string="Community Wildfire Protection Plan (CWPP)"/>
+                            <field name="gm_cwpp_adoption_date" string="CWPP Adoption Date"/>
+                            <field name="gm_cwpp_exp_date" string="CWPP Expiration Date"/>
+                            <field filename="gm_transportation_plan_filename" name="gm_transportation_plan" string="Transportation Plan"/>
+                            <field name="gm_transportation_plan_adoption_date"/>
+                            <field filename="gm_drainage_plan_filename" name="gm_drainage_plan" string="Drainage Plan"/>
+                            <field name="gm_drainage_plan_adoption_date"/>
+                            <field filename="gm_parks_plan_filename" name="gm_parks_plan" string="Parks Plan"/>
+                            <field name="gm_parks_plan_adoption_date"/>
+                            <field filename="gm_economic_development_plan_filename" name="gm_economic_development_plan" string="Economic Development Plan"/>
+                            <field name="gm_economic_development_plan_adoption_date"/>
+                            <field filename="gm_capital_improvement_plan_filename" name="gm_capital_improvement_plan" string="Capital Improvement Plan"/>
+                            <field name="gm_capital_improvement_plan_adoption_date"/>
+                            <field filename="gm_asset_management_plan_filename" name="gm_asset_management_plan" string="Asset Management Plan"/>
+                            <field name="gm_asset_management_plan_adoption_date"/>
+                            <field filename="transportation_safety_plan_filename" name="transportation_safety_plan" string="Transportation Safety Plan"/>
+                            <field name="transportation_safety_plan_adoption_date"/>
+                            <field filename="gm_downtown_plan_filename" name="gm_downtown_plan" string="Downtown Plan"/>
+                            <field name="gm_downtown_plan_adoption_date"/>
+                            <field filename="gm_population_study_filename" name="gm_population_study" string="Population Study"/>
+                            <field name="gm_population_study_date"/>
+                            <field filename="gm_housing_study_filename" name="gm_housing_study" string="Housing Study"/>
+                            <field name="gm_housing_study_date"/>
+                        </group>
+                        <group name="community_plans_page_right" string="Zoning &amp; Building Codes">
+                            <field filename="gm_zoning_ordiance_filename" name="gm_zoning_ordiance" string="Zoning Ordinance"/>
+                            <field filename="gm_zoning_map_filename" name="gm_zoning_map" string="Zoning Map"/>
+                            <field name="gm_zoning_ordinace_adoption_date"/>
+                            <field filename="gm_building_code_ordiance_filename" name="gm_building_code_ordiance" string="Building Code Ordinance"/>
+                            <field name="gm_building_code_ordiance_adoption_date"/>
+                            <field name="gm_Building_code_standard"/>
+                            <field filename="gm_irc_ordiance_filename" name="gm_irc_ordiance" string="International Residential Code (IRC) Ordinance"/>
+                            <field name="gm_irc_ordiance_adoption_date"/>
+                            <field name="gm_irc_standard"/>
+                            <field filename="gm_ipmc_ordiance_filename" name="gm_ipmc_ordiance" string="International Property Maintenance Code (IPMC) Ordinance"/>
+                            <field name="gm_ipmc_ordiance_adoption_date"/>
+                            <field name="gm_ipmc_standard"/>
+                            <field filename="gm_plumbing_ordiance_filename" name="gm_plumbing_ordiance" string="Uniform Plumbing Code (UPC) Ordinance"/>
+                            <field name="gm_plumbing_ordiance_adoption_date"/>
+                            <field name="gm_plumbing_standard"/>
+                            <field filename="gm_mechanical_ordiance_filename" name="gm_mechanical_ordiance" string="Uniform Mechanical Code (UMC) Ordinance"/>
+                            <field name="gm_mechanical_ordiance_adoption_date"/>
+                            <field name="gm_mechanical_standard"/>
+                            <field filename="gm_electrical_ordiance_filename" name="gm_electrical_ordiance" string="National Electrical Code (NEC) Ordinance"/>
+                            <field name="gm_electrical_ordiance_adoption_date"/>
+                            <field name="gm_electrical_ordiance_standard"/>
+                            <field filename="gm_fire_code_ordiance_filename" name="gm_fire_code_ordiance" string="International Fire Code (IFC) Ordinance"/>
+                            <field name="gm_fire_code_ordiance_adoption_date"/>
+                            <field name="gm_fire_code_standard"/>
+                            <field filename="gm_wildland_urban_interface_code_ordiance_filename" name="gm_wildland_urban_interface_code_ordiance" string="International Wildland-Urban Interface Code (IWUIC) Ordinance"/>
+                            <field name="gm_wildland_urban_interface_code_ordiance_adoption_date"/>
+                            <field name="gm_wildland_urban_interface_code_standard"/>
+                            <field filename="gm_energy_conservation_code_ordiance_filename" name="gm_energy_conservation_code_ordiance" string="International Energy Conservation Code (IECC) Ordinance"/>
+                            <field name="gm_energy_conservation_code_ordiance_adoption_date"/>
+                            <field name="gm_energy_conservation_code_standard"/>
+                            <field filename="gm_solar_ordinance_filename" name="gm_solar_ordinance" string="Solar Code Ordinance"/>
+                            <field name="gm_solar_ordinance_adoption_date"/>
+                            <field name="gm_solar_standard"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath></field>  
+    </record>
+    <record id="view_partner_tree_inherit" model="ir.ui.view">
+        <field name="name">res.partner.tree.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <!-- Hide unwanted fields -->
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+                <attribute name="readonly">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+                <attribute name="readonly">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="invisible">1</attribute>
+                <attribute name="readonly">1</attribute>
+            </xpath>
+            <!-- Reorder and show desired fields -->
+            <field name="activity_ids" position="before">
+                <field name="gm_organization_type" optional="show"/>
+                <field name="function" optional="show"/>
+                <field name="project_manager_ids" optional="show"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="gm_tx_directory_phone" optional="show"/>
+                <field name="gm_tx_directory_email" optional="show"/></field></field>
+    </record>
+    <record id="view_partner_kanban_inherit" model="ir.ui.view">
+        <field name="name">res.partner.kanban.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//templates/t[@t-name='kanban-box']//li[field[@name='email']]" position="after">
+                <li>
+                    <field name="phone" on_change="1"/>
+                </li>
+                <li>
+                    <field name="email" on_change="1"/>
+                </li>
+                <li>
+                    <field name="gm_tx_directory_phone" on_change="1"/>
+                </li>
+                <li>
+                    <field name="gm_tx_directory_email" on_change="1"/>
+                </li>
+            </xpath></field>
+        -->
+    </record>
+</odoo>

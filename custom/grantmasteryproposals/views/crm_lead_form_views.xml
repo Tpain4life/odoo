@@ -1,0 +1,71 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<!-- FILEPATH: odoo17/server/custom/grantmasterycrm/views/crm_lead_views.xml -->
+<odoo>
+    <record id="view_crm_lead_inherited" model="ir.ui.view">
+        <field name="name">Procurements &amp; Proposals</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='expected_revenue']" position="attributes">
+                <attribute name="invisible">gm_type_of_cost_proposal == 'Percentage'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='recurring_revenue']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='recurring_plan']" position="attributes">
+                <attribute name="required">recurring_revenue != 0</attribute>
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='probability']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//group[@name='opportunity_partner']" position="attributes">
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[@name='opportunity_partner']/field[@name='partner_id']" position="after">
+                <field name="gm_type_of_cost_proposal" string="Type of Cost Proposal"/>
+                <field invisible="gm_type_of_cost_proposal == 'Fixed Fee'" name="gm_administration_percentage" string="Administration Percentage" widget="percentage"/>
+                <field name="gm_method_of_delivery" string="Method of Delivery"/>
+                <field name="gm_mail_proposal_to" string="Mail Proposal To:"/>
+                <field name="gm_email_proposal_to" string="Email Proposal To"/>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[@name='opportunity_partner']/div[1]/field[@name='email_from']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/field[@name='type']" position="attributes">
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[not(@name)][1]/field[@name='user_id']" position="attributes">
+                <attribute name="string">
+                    Procurement Lead</attribute>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[not(@name)][1]/field[@name='user_id']" position="after">
+                <field name="gm_meeting_scheduled" string="Meeting Scheduled"/>
+                <field name="gm_template_documents_sent" string="Template Documents Sent"/>
+                <field filename="gm_rfprfq_filename" name="gm_rfprfq" string="RFP/RFQ"/>
+                <field invisible="1" name="gm_proposal_filename"/>
+                <field invisible="1" name="gm_rfprfq_filename"/>
+                <field name="gm_rfprfq_due_date" string="RFP/RFQ Due Date"/>
+                <field filename="gm_addendum_1_filename" name="gm_addendum_1" string="Addendum #1"/>
+                <field filename="gm_addendum_2_filename" name="gm_addendum_2" string="Addendum #2"/>
+                <field invisible="1" name="gm_addendum_2_filename"/>
+                <field invisible="1" name="gm_addendum_1_filename"/>
+                <field filename="gm_proposal_filename" name="gm_proposal" string="Proposal"/>
+                <field name="gm_ready_to_mail" string="Ready to Mail"/>
+                <field name="gm_mail_service" string="Mail Service"/>
+                <field name="gm_proposal_sent" string="Proposal Sent"/>
+                <field name="gm_tracking_number" string="Shipping Tracking Number"/>
+                <field name="gm_proposal_received" string="Proposal Received"/>
+                <field filename="gm_proposal_received_documentation_filename" name="gm_proposal_received_documentation" string="Proposal Received Documentation"/>
+                <field invisible="1" name="gm_proposal_received_documentation_filename"/>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[not(@name)][1]/div[1]" position="after">
+                <field filename="gm_notice_of_award_filename" name="gm_notice_of_award" string="Notice of Award"/>
+                <field invisible="1" name="gm_notice_of_award_filename"/>
+                <field name="gm_competitor_awarded" string="Competitor Awarded:"/>
+                <field invisible="1" name="currency_id"/>
+                <field name="gm_award_amount" string="Competitor Award Amount"/>
+            </xpath>
+            <xpath expr="//div[@id='probability']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath></field>
+    </record>
+</odoo>
